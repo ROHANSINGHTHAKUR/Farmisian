@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+          }
+          
+          header, footer {
+            background-color: #f5f5f5;
+            padding: 10px;
+          }
+          
+          main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .cart-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+          }
+          
+          .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          
+          .cart-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 10px;
+          }
+          
+          .cart-item-details {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .cart-item-name {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+          }
+          
+          .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+          }
+          
+          .cart-item-quantity input {
+            width: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+          }
+          
+          .cart-item-quantity button {
+            background-color: #f5f5f5;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+          }
+          
+          .cart-item-quantity button:hover {
+            background-color: #ccc;
+          }
+          
+          .cart-item-remove {
+            background-color: #f00;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .cart-item-remove:hover {
+            background-color: #c00;
+          }
+          
+          .cart-totals {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+          }
+          
+          .cart-totals p {
+            margin-bottom: 5px;
+          }
+          
+          .checkout-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .checkout-button:hover {
+            background-color: #0062cc;
+          }
+           
+    </style>
+</head>
+<body>
+    <header>
+        </header>
+    <main>
+        <h1>Shopping Cart</h1>
+        <div class="cart-container">
+            </div>
+        <div class="cart-totals">
+            <p>Subtotal: <span id="subtotal"></span></p>
+            <p>Tax: <span id="tax"></span></p>
+            <p>Total: <span id="total"></span></p>
+            <a href="#" class="button checkout-button">Checkout</a>
+        </div>
+    </main>
+    <footer>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
