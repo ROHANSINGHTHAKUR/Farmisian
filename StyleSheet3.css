@@ -1,0 +1,13 @@
+﻿li {
+    margin: 20px;
+    list-style: none;
+}
+
+    li a {
+        text-decoration: none;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}

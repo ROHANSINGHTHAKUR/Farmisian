@@ -1,0 +1,46 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Optional for spacing */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-container img {
+    width: 10%;
+    height: 10%;
+}
+
+.login-container {
+    background-color: transparent; /* Fully transparent card */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Additional styling for form elements, text, etc. */
+
+.bg-image {
+    background-image: url("farm2.jpeg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

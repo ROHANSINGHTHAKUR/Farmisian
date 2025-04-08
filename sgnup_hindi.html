@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Your E-Commerce Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="StyleSheet1.css">
+
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="navlist">
+        <img src="logo2.png" alt="Logo" class="navlist-logo">
+    <a href="Homepage_hindi.html">घर</a>
+    <a href="#">हमारे उत्पाद</a>
+    <a href="#">हमारे बारे में</a>
+    <a href="#">संपर्क करें</a>
+
+    <a href="login_hindi.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">लॉग इन करें</a>
+
+    <div class="search">
+        <form action="#">
+            <input type="text" placeholder="Search Courses" name="search">
+            <button>
+                <i class="fa fa-search" style="font-size: 18px;"></i>
+            </button>
+        </form>
+    </div>
+</div>
+  
+  <main>
+    <div class="signup-container">
+      <h1>विशेष फायदे अनलॉक करा</h1>
+      <p>आज ही एक खाता बनाएं और विशेष ऑफ़र, बिक्री तक शीघ्र पहुंच और वैयक्तिकृत अनुशंसाओं का आनंद लें।</p>
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="name">नाम:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">मेल पता:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">पासवर्ड:</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">पासवर्ड की पुष्टि कीजिये:</label>
+          <input type="password" name="confirm-password" id="confirm-password" required>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="terms" id="terms" required>
+          <label for="terms">I agree to the <a href="terms.html">सेवा की शर्तें</a> और <a href="privacy.html">गोपनीयता नीति</a>.</label>
+        </div>
+        <button type="submit">साइन अप करें</button>
+      </form>
+      <p>क्या आपके पास पहले से एक खाता मौजूद है? <a href="login_hindi.html">यहां लॉगिन करें</a></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 आपकी ई-कॉमर्स वेबसाइट। सर्वाधिकार सुरक्षित।</p>
+  </footer>
+</body>
+</html>

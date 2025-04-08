@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Your E-Commerce Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="StyleSheet1.css">
+
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div id="navlist">
+        <img src="logo2.png" alt="Logo" class="navlist-logo">
+        <a href="Homepage_Marathi.html">मुख्यपृष्ठ</a>
+        <a href="#">आमची उत्पादने</a>
+        
+        <a href="#">आमच्याबद्दल</a>
+        <a href="contact_us_marathi.html">आमच्याशी संपर्क साधा</a>
+
+        <a href="login_mararhi.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">लॉगिन करा</a>
+        <div class="navlist-right">
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search Courses" name="search">
+                <button>
+                    <i class="fa fa-search" style="font-size: 18px;"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+  
+  <main>
+    <div class="signup-container">
+      <h1>विशेष फायदे अनलॉक करा</h1>
+      <p>आजच खाते तयार करा आणि विशेष ऑफर, विक्रीमध्ये लवकर प्रवेश आणि वैयक्तिकृत शिफारसींचा आनंद घ्या.</p>
+      <form action="submit.php" method="post">
+        <div class="form-group">
+          <label for="name">नाव:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">ईमेल पत्ता:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">पासवर्ड:</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">पासवर्डची पुष्टी करा:</label>
+          <input type="password" name="confirm-password" id="confirm-password" required>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="terms" id="terms" required>
+          <label for="terms">मी सहमत आहे<a href="terms.html">सेवा अटी</a> आणि<a href="privacy.html">गोपनीयता धोरण</a>.</label>
+        </div>
+        <button type="submit">साइन अप करा</button>
+      </form>
+      <p>आधीपासूनच एक खाते आहे?<a href="login_marathi.html">येथे लॉग इन करा</a></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy;2024 तुमची ई-कॉमर्स वेबसाइट. सर्व हक्क राखीव.</p>
+  </footer>
+</body>
+</html>

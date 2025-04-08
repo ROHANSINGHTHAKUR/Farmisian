@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Farmisian</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="StyleSheet2.css">
+    <link rel="stylesheet" href="Sliding images.css">
+    <link rel="stylesheet" href="StyleSheet3.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet5.css">
+</head>
+<body>
+    <div id="navlist">
+        <img src="logo2.png" alt="Logo" class="navlist-logo">
+        <a href="Homepage.html">Home</a>
+        <a href="#">Our Products</a>
+        
+        <a href="About_us_hindi.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+
+        <a href="login.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+        <div class="navlist-right">
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search Courses" name="search">
+                <button>
+                    <i class="fa fa-search" style="font-size: 18px;"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <br /><br />
+    <!-- second nav bar-->
+    <nav>
+        <div class="dropdown">
+            <button class="dropdown-item"><b>All Categories</b></button>
+            <div class="dropdown-content">
+                <ul>
+                   <li> <a href="grocerries.html">daily grocerries</a></li>
+                   <li><a href="grain.html">grain</a></li> 
+                   <li><a href="pulsees.html">pulses</a></li> 
+                </ul>
+            </div>
+        </div>
+        
+        <!--Language dropdown-->
+        <div class="dropdown">
+            <button id="language-Button" class="dropdown-btn">Language</button>
+            <div class="dropdown-content">
+              <a href="Homepage.html" data-lang="en">English</a>
+              <a href="Homepage_hindi.html" data-lang="hi">Hindi</a>
+              <a href="Homepage_Marathi.html" data-lang="mr">Marathi</a>
+            </div>
+          </div>
+          
+          
+          
+        <!--Sell buttonS-->
+
+        <button id="sellButton"><a href="sell.html">Sell</a></button>
+    </nav>
+
+    <script>
+        // Add an event listener to the button
+        document.getElementById("sellButton").addEventListener("click", function () {
+            alert("Sell button clicked!");
+            // You can replace the alert with your own logic, such as redirecting to a selling page or triggering a transaction.
+        });
+    </script>
+
+    <!--sliding images-->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="jiomart.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images4.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="groceries-offers.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <!-- container or product images-->
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="farm1.webp" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button class="addToCart" data-product-id="123" data-quantity="1">Add to Cart</button>
+
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm2.jpg" class="card-img-top" alt="..."height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm3.jpg" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm4.avif" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    <!--second lane-->
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="farm5.jpg" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm6.webp" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm7.jpg" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm8.jpg" class="card-img-top" alt="..."height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--third lane-->
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="farm9.jpg" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm10.webp" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm13.jpg" class="card-img-top" alt="..." height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="farm12.jpg" class="card-img-top" alt="..."height="190px" >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-ZtdE1X/tSH7x1zWK/880ft4Lv/qaB/Q/85Tv3FLk/+dZI/i8/Ep/NWNI9XgDYdG/T6sT5B4E" crossorigin="anonymous"></script>
+<br><br><br><br>
+<div id="main-content-container">
+
+
+        <h1>Farmisian</h1>
+        <p>is owned & managed by "Farm Commerce Private Limited" (formerly known as Farmisian India Private Limited) and is not related, linked or interconnected in whatsoever manner or nature, to "farmisian.COM" which is a real estate services business operated by "Redstone Consultancy Services Private Limited".</p>
+        <a class="app-store-button" href="#" target="_blank">Download on the App Store</a>
+        <a class="google-play-button" href="#" target="_blank">GET IT ON Google Play</a>
+        <div class="disclaimer">
+           &copy; Farmisian Commerce Private Limited (formerly known as Farmisian India Private Limited) , 2016-2024
+        </div>
+     </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sell Page</title>
+	<link rel="stylesheet" type="text/css" href="sell.css">
+</head>
+<body>
+	<h1>Sell Your Products Here</h1>
+	<form action="submit_sell.php" method="post" enctype="multipart/form-data">
+		<label for="category">Choose a Category:</label>
+		<select name="category" id="category">
+			<option value="Grocerries">Grocerries</option>
+			<option value="Pulses">Pulses</option>
+			<option value="Grains">Grains</option>
+			<option value="Spices">Spices</option>
+			<option value="vegitables">Vegitables</option>
+      <option value="Fruites">Fruites</option>
+		</select>
+		<br>
+		<label for="product_name">Product Name:</label>
+		<input type="text" name="product_name" id="product_name" required>
+		<br>
+		<label for="product_description">Product Description:</label>
+		<textarea name="product_description" id="product_description" required></textarea>
+		<br>
+		<label for="product_price">Product Price:</label>
+		<input type="number" name="product_price" id="product_price" min="0" step="0.01" required>
+		<br>
+		<label for="product_image">Product Image:</label>
+		<input type="file" name="product_image" id="product_image" required>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

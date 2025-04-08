@@ -1,0 +1,62 @@
+﻿
+	/* styling navlist */
+	#navlist {
+		background-color: yellow;
+		position: absolute;
+		width: 100%;
+		padding: 15px; /* Add padding to accommodate the image height */
+	  }
+	  
+	  .navlist-logo {
+		float: left;
+		height: 50px; /* Adjust height as needed */
+		margin-right: 15px; /* Add spacing between image and links */
+	  }
+	  
+	  #navlist a {
+		float: left;
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 15px;
+	  }
+	  
+	  /* ... rest of your CSS ... */
+	  
+	
+	.navlist-right{
+		float:right;
+	}
+
+	/* hover effect of navlist anchor element */
+	#navlist a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+		
+	/* styling search bar */
+	.search input[type=text]{
+		width:300px;
+		height:25px;
+		border-radius:25px;
+		border: none;
+	}
+		
+	.search{
+		float:right;
+		margin:7px;
+	}
+		
+	.search button{
+		background-color: yellow;
+		color:red;
+		float: right;
+		padding: 5px 10px;
+		margin-right: 16px;
+		font-size: 12px;
+		border: none;
+		cursor: pointer;
+	} 
+
