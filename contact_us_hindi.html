@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="stylesheet" href="StyleSheet1.css">
+   
+    
+        <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+    <div id="navlist">
+        <img src="logo2.png" alt="Logo" class="navlist-logo">
+    <a href="Homepage_hindi.html">घर</a>
+    <a href="#">हमारे उत्पाद</a>
+    <a href="#">हमारे बारे में</a>
+    <a href="contact_us_hindi.html">संपर्क करें</a>
+
+    <a href="login_hindi.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">लॉग इन करें</a>
+
+    <div class="search">
+        <form action="#">
+            <input type="text" placeholder="Search Courses" name="search">
+            <button>
+                <i class="fa fa-search" style="font-size: 18px;"></i>
+            </button>
+        </form>
+    </div>
+</div>
+<br /><br />
+
+<br><br><br><br>
+  <main> <h1>संपर्क करें</h1>
+    <p id="para">हम आपसे सुनना चाहेंगे</p>
+    <p>यदि आपका कोई प्रश्न या चिंता है, तो कृपया हमसे संपर्क करने के लिए नीचे दिया गया फॉर्म भरें।</p>
+
+    <form action="submit_form.php" method="post">
+      <label for="name">नाम:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">ईमेल:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">संदेश:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">जमा करना</button>
+    </form>
+
+    <p>वैकल्पिक रूप से, आप हमें ईमेल के माध्यम से संपर्क कर सकते हैं <a href="mailto:farmisian@gmail.com">farmisian@gmail.com</a>.</p>
+  </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    
+  }
+
+    
+
+    /* Adjust the content spacing for the image */
+    main {
+        margin-top: 0; /* Adjust as needed */
+      }
+
+    h1 {
+      color: #27712a;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 50px;
+    }
+
+    #para {
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p {
+      color: #666;
+    }
+
+    form {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  
